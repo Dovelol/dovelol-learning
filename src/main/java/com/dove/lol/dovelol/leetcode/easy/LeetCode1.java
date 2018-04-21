@@ -1,13 +1,15 @@
 package com.dove.lol.dovelol.leetcode.easy;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 /**
  * @author Dovelol
  * @date 2018/4/21 18:23
  */
-public class TwoSum {
+
+public class LeetCode1 {
 
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {

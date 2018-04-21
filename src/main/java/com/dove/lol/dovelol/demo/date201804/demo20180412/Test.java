@@ -51,6 +51,8 @@ public class Test {
         }
         System.out.println();
 
+        System.out.println(Integer.MIN_VALUE);
+
     }
 
 }
