@@ -1,6 +1,5 @@
 package com.dove.lol.dovelol.demo.date201804.demo20180421.packandunpack;
 
-import com.dove.lol.dovelol.demo.date201804.demo20180421.TimeServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
