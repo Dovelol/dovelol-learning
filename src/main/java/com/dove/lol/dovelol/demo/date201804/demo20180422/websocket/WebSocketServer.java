@@ -1,4 +1,4 @@
-package com.dove.lol.dovelol.demo.date201804.demo20180422;
+package com.dove.lol.dovelol.demo.date201804.demo20180422.websocket;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;

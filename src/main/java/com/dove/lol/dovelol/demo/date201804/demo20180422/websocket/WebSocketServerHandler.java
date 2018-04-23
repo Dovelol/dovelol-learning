@@ -1,4 +1,4 @@
-package com.dove.lol.dovelol.demo.date201804.demo20180422;
+package com.dove.lol.dovelol.demo.date201804.demo20180422.websocket;
 
 import static io.netty.handler.codec.http.HttpHeaderUtil.isKeepAlive;
 import static io.netty.handler.codec.http.HttpHeaderUtil.setContentLength;
