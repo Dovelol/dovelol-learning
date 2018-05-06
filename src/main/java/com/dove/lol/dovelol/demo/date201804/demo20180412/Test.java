@@ -30,7 +30,7 @@ public class Test {
         System.out.println(g == (a + b));
         System.out.println(g.equals(a + b));
 
-        System.out.println(((82765.34 * 2.1489 - 170000 * 1.05) * 0.8 + 170000 * 1.05) * 15 / 17);
+        System.out.println(((82765.34 * 2.3060 - 170000 * 1.05) * 0.8 + 170000 * 1.05) * 2 / 17);
 
         System.out.println(PlatformDependent.isWindows());
 
