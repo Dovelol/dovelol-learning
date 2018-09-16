@@ -19,15 +19,15 @@ public class CompletableFutureExample3 {
         //Thread.currentThread().join();
 
 
-//        CompletableFuture.supplyAsync(() ->{
-//            try {
-//                TimeUnit.SECONDS.sleep(5);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//
-//            return "Hello";
-//        }).thenAccept(System.out::println);
+        CompletableFuture.supplyAsync(() ->{
+            try {
+                TimeUnit.SECONDS.sleep(5);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            return "Hello";
+        }).thenAccept(System.out::println);
 
         CompletableFuture.supplyAsync(() ->{
             try {
