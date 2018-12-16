@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class ArrayListSample {
 
     public static void main(String[] args) {
-        ArrayList list  = new ArrayList(5);
+        ArrayList list = new ArrayList(5);
         //list.set(1,1);
 
         Integer i = new Integer(0);
@@ -21,8 +21,10 @@ public class ArrayListSample {
 
         Method[] declaredMethods = list.getClass().getDeclaredMethods();
         list.clone();
-        for (Method method : declaredMethods){
+        for (Method method : declaredMethods) {
         }
+
+        list.removeIf(e -> e == null);
 
     }
 
