@@ -23,55 +23,55 @@ import io.netty.handler.codec.string.StringDecoder;
  */
 public class EchoClient {
 
-    private final String host;
-
-    private final int port;
-
-    private final int sendNumber;
-
-    public EchoClient(String host, int port, int sendNumber) {
-        this.host = host;
-        this.port = port;
-        this.sendNumber = sendNumber;
-    }
-
-    public void connect() throws Exception {
-        //配置客户端NIO线程组
-        EventLoopGroup group = new NioEventLoopGroup();
-
-        try {
-            Bootstrap b = new Bootstrap();
-            b.group(group).channel(NioSocketChannel.class).option(ChannelOption.TCP_NODELAY, true)
-                    .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 3000)
-                    .handler(new ChannelInitializer<SocketChannel>() {
-                        @Override
-                        protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            socketChannel.pipeline().addLast("frameDecoder", new LengthFieldBasedFrameDecoder(65535, 0, 2, 0, 2));
-
-                            socketChannel.pipeline().addLast("msgpack decoder", new MsgpackDecoder());
-
-                            socketChannel.pipeline().addLast("frameEncoder", new LengthFieldPrepender(2));
-
-                            socketChannel.pipeline().addLast("msgpack encoder", new MsgpackEncoder());
-                            socketChannel.pipeline().addLast(new EchoClientHandler(sendNumber));
-                        }
-                    });
-
-            //发起异步连接操作
-            ChannelFuture f = b.connect(host, port).sync();
-
-            //等待客户端链路关闭
-            f.channel().closeFuture().sync();
-        } finally {
-            //优雅退出，释放NIO线程组
-
-            group.shutdownGracefully();
-        }
-
-    }
-
-
-    public static void main(String[] args) throws Exception {
-        new EchoClient("127.0.0.1", 8080, 5).connect();
-    }
+//    private final String host;
+//
+//    private final int port;
+//
+//    private final int sendNumber;
+//
+//    public EchoClient(String host, int port, int sendNumber) {
+//        this.host = host;
+//        this.port = port;
+//        this.sendNumber = sendNumber;
+//    }
+//
+//    public void connect() throws Exception {
+//        //配置客户端NIO线程组
+//        EventLoopGroup group = new NioEventLoopGroup();
+//
+//        try {
+//            Bootstrap b = new Bootstrap();
+//            b.group(group).channel(NioSocketChannel.class).option(ChannelOption.TCP_NODELAY, true)
+//                    .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 3000)
+//                    .handler(new ChannelInitializer<SocketChannel>() {
+//                        @Override
+//                        protected void initChannel(SocketChannel socketChannel) throws Exception {
+//                            socketChannel.pipeline().addLast("frameDecoder", new LengthFieldBasedFrameDecoder(65535, 0, 2, 0, 2));
+//
+//                            socketChannel.pipeline().addLast("msgpack decoder", new MsgpackDecoder());
+//
+//                            socketChannel.pipeline().addLast("frameEncoder", new LengthFieldPrepender(2));
+//
+//                            socketChannel.pipeline().addLast("msgpack encoder", new MsgpackEncoder());
+//                            socketChannel.pipeline().addLast(new EchoClientHandler(sendNumber));
+//                        }
+//                    });
+//
+//            //发起异步连接操作
+//            ChannelFuture f = b.connect(host, port).sync();
+//
+//            //等待客户端链路关闭
+//            f.channel().closeFuture().sync();
+//        } finally {
+//            //优雅退出，释放NIO线程组
+//
+//            group.shutdownGracefully();
+//        }
+//
+//    }
+//
+//
+//    public static void main(String[] args) throws Exception {
+//        new EchoClient("127.0.0.1", 8080, 5).connect();
+//    }
 }

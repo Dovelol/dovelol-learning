@@ -11,19 +11,19 @@ import io.netty.channel.ChannelHandlerContext;
  */
 public class EchoServerHandler extends ChannelHandlerAdapter {
 
-    int counter = 0;
-
-    @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        System.out.println("This is " + ++counter + " times receive client: [" + msg + "]");
-
-        ctx.writeAndFlush(msg);
-
-    }
-
-    @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        cause.printStackTrace();
-        ctx.close();
-    }
+//    int counter = 0;
+//
+//    @Override
+//    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+//        System.out.println("This is " + ++counter + " times receive client: [" + msg + "]");
+//
+//        ctx.writeAndFlush(msg);
+//
+//    }
+//
+//    @Override
+//    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+//        cause.printStackTrace();
+//        ctx.close();
+//    }
 }
