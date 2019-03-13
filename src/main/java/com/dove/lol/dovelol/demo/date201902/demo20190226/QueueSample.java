@@ -1,7 +1,6 @@
 package com.dove.lol.dovelol.demo.date201902.demo20190226;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * @author Dovelol
@@ -13,6 +12,14 @@ public class QueueSample {
         Queue<String> queue = new LinkedList();
         queue.add("123");
         queue.offer("abc");
+
+
+        List<Object> objects = Collections.emptyList();
+        System.out.println(objects);
+
+        List<Object> list = new ArrayList<>();
+
+        System.out.println(list);
     }
 
 }
