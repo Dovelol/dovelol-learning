@@ -19,7 +19,7 @@ public class MethodHandleTest {
 
     public static void main(String[] args) throws Throwable {
         Object obj = System.currentTimeMillis() % 2 == 0 ? System.out : new ClassA();
-        getPrintlnMH(obj).invokeExact("hello");
+        getPrintlnMH(obj).invokeExact("Hello");
     }
 
     private static MethodHandle getPrintlnMH(Object reveiver) throws Throwable {

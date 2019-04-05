@@ -33,7 +33,7 @@ public class UnsafeTest {
         System.out.println("Time passed in ms:" + (end - start));
     }
 
-    private static Unsafe getUnsafe() {
+    private static Unsafe  getUnsafe() {
         try {
             Field f = Unsafe.class.getDeclaredField("theUnsafe");
             f.setAccessible(true);

@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl {
 
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
@@ -26,16 +26,13 @@ public class UserServiceImpl implements UserService {
         logger.info("UserServiceImpl 创建");
     }
 
-
-    @Override
     public User selectById(Long id) {
         User user = userMapper.selectByPrimaryKey(id);
         logger.info("user:" + user);
         return user;
     }
 
-    @Transactional(rollbackFor = Exception.class)
-    @Override
+    //@Transactional(rollbackFor = Exception.class)
     public Long createUser(User user) {
         userMapper.insertSelective(user);
         return user.getId();

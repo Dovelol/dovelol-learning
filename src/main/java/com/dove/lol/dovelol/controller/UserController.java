@@ -3,6 +3,7 @@ package com.dove.lol.dovelol.controller;
 import com.dove.lol.dovelol.model.User;
 import com.dove.lol.dovelol.service.MyService;
 import com.dove.lol.dovelol.service.UserService;
+import com.dove.lol.dovelol.service.impl.UserServiceImpl;
 import com.dove.lol.dovelol.utils.ApiResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +27,7 @@ public class UserController {
     }
 
     @Autowired
-    private UserService userService;
+    private UserServiceImpl userServiceImpl;
 
     @Autowired
     private MyService myService;
@@ -34,7 +35,7 @@ public class UserController {
     @GetMapping(value = "/user")
     public ApiResponse<?> getUser(@RequestParam(value = "id") Long id) {
         myService.test();
-        return new ApiResponse<>(ApiResponse.Status.SUCCESS, userService.selectById(id));
+        return new ApiResponse<>(ApiResponse.Status.SUCCESS, userServiceImpl.selectById(id));
     }
 
     @PostMapping(value = "/user")
@@ -42,7 +43,7 @@ public class UserController {
         User user = new User();
         user.setName(name);
         user.setAge(age);
-        Long id = userService.createUser(user);
+        Long id = userServiceImpl.createUser(user);
         user.setId(id);
         return new ApiResponse<>(ApiResponse.Status.SUCCESS, user);
     }
