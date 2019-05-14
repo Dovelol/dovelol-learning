@@ -1,6 +1,7 @@
 ## Application Context Initializers
-#org.springframework.context.ApplicationContextInitializer=\
-#com.dove.lol.dovelol.DemoInitializer
-#
-##org.springframework.context.ApplicationListener=\
-##com.dove.lol.dovelol.DemoListener
+org.springframework.context.ApplicationContextInitializer=\
+com.dove.lol.dovelol.DemoInitializer
+
+
+org.springframework.context.ApplicationListener=\
+com.dove.lol.dovelol.DemoListener
