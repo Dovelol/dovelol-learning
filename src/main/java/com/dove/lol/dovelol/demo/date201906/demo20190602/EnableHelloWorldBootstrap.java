@@ -8,21 +8,24 @@ import org.springframework.context.annotation.Configuration;
  * @date 2019/6/2 21:43
  */
 
-//@EnableHelloWorld
+@EnableHelloWorld
 @Configuration
 public class EnableHelloWorldBootstrap {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
 
-        //context.register(EnableHelloWorldBootstrap.class);
+        context.register(EnableHelloWorldBootstrap.class);
 
-        context.scan("com.dove.lol.dovelol.demo.date201906.*");
+
+        //context.scan("com.dove.lol.dovelol.demo.date201906.*");
 
         context.refresh();
 
         String helloWorld = context.getBean("helloWorld", String.class);
+        HelloWorldConfiguration helloWorldConfiguration = context.getBean(HelloWorldConfiguration.class);
         System.out.println(helloWorld);
+        System.out.println(helloWorldConfiguration.helloWorld());
 
 
     }

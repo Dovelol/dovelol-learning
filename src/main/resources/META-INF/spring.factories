@@ -5,3 +5,8 @@ com.dove.lol.dovelol.DemoInitializer
 
 org.springframework.context.ApplicationListener=\
 com.dove.lol.dovelol.DemoListener
+
+com.dove.lol.dovelol.demo.date201906.demo20190607.ContextDemo=\
+com.dove.lol.dovelol.demo.date201906.demo20190607.ContextDemoImpl
+
+

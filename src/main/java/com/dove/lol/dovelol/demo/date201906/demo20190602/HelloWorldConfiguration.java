@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2019/6/2 21:48
  */
 
-@Configuration
+//@Configuration
 public class HelloWorldConfiguration {
 
     @Bean
