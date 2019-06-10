@@ -1,15 +1,12 @@
 package com.dove.lol.dovelol;
 
-import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
-import org.springframework.stereotype.Component;
 
 /**
  * @author Dovelol
  * @date 2019/3/6 23:22
  */
-@Component
 public class DemoListener implements ApplicationListener<ContextRefreshedEvent> {
 
     public DemoListener() {
