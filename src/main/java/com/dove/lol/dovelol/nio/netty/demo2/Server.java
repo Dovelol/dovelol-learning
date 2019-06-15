@@ -1,6 +1,5 @@
-package com.dove.lol.dovelol.netty.demo2;
+package com.dove.lol.dovelol.nio.netty.demo2;
 
-import com.dove.lol.dovelol.demo.date201712.demo20171223.channel.Channel;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

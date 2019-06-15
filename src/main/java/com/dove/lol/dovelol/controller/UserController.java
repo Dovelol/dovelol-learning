@@ -48,4 +48,10 @@ public class UserController {
         return new ApiResponse<>(ApiResponse.Status.SUCCESS, user);
     }
 
+    @PostMapping(value = "/getUser")
+    public ApiResponse<?> getUser(User user) {
+        return new ApiResponse<>(ApiResponse.Status.SUCCESS, user);
+    }
+
+
 }

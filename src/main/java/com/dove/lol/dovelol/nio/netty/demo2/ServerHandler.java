@@ -1,4 +1,4 @@
-package com.dove.lol.dovelol.netty.demo2;
+package com.dove.lol.dovelol.nio.netty.demo2;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
