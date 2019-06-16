@@ -21,9 +21,10 @@ public class ByteBufferSample {
 
         byte[] vArray = new byte[byteBuffer.remaining()];
 
-        System.out.println(byteBuffer.get(10));
+        System.out.println(byteBuffer.get(5));
 
         System.out.println(byteBuffer.remaining());
+        byteBuffer.get(vArray);
         System.out.println(new String(vArray));
 
 
