@@ -1,3 +1,5 @@
+package com.dove.lol.dovelol;
+
 import org.apache.catalina.connector.Connector;
 import org.springframework.boot.web.embedded.tomcat.TomcatConnectorCustomizer;
 
