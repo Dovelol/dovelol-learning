@@ -1,4 +1,4 @@
-package com.dove.lol.dovelol.daily.practise.demo20190710;
+package com.dove.lol.dovelol.daily.practise.q20190710;
 
 import java.util.HashSet;
 import java.util.Set;

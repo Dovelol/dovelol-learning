@@ -1,4 +1,4 @@
-package com.dove.lol.dovelol.daily.practise.demo20190708;
+package com.dove.lol.dovelol.daily.practise.q20190708;
 
 /**
  * @author Dovelol
