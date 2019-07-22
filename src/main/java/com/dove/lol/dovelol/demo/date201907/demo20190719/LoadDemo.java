@@ -16,8 +16,8 @@ public class LoadDemo {
         //System.out.println(d);
         Class<?> aClass = Class.forName("com.dove.lol.dovelol.demo.date201907.demo20190719.LoadDemo");
         System.out.println(aClass);
-        Object o = aClass.newInstance();
-        System.out.println(o);
+//        Object o = aClass.newInstance();
+//        System.out.println(o);
     }
 
 }
