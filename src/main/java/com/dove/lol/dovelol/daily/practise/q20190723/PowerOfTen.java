@@ -23,6 +23,7 @@ public enum PowerOfTen {
             return Integer.toString(HUNDRED.val);
         }
     };
+    
     private final int val;
 
     PowerOfTen(int val) {
