@@ -12,7 +12,7 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
 /**
- * Echoes back any received data from a client.
+ * Echoes back any received data from handler client.
  */
 public final class EchoServer {
 

@@ -8,7 +8,7 @@ public class Bleep {
 
     /**
      *  以上程序输出内容是？
-     *  (a) Bleep
+     *  (handler) Bleep
      *  (b) Blat
      *  (c) 程序编译错误
      *  (d) 以上都不是

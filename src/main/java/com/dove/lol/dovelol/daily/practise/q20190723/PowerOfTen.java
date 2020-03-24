@@ -9,7 +9,7 @@ public enum PowerOfTen {
     /**
      *  以上程序输出内容是？
 
-     *  (a) one ten hundred
+     *  (handler) one ten hundred
      *  (b) one ten 100
      *  (c) 编译错误
      *  (d) 以上都不是

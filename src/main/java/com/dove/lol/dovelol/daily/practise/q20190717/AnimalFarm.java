@@ -9,7 +9,7 @@ public class AnimalFarm {
     /**
      * 以上程序输出内容是？
 
-     *  (a) Animals are equal: true
+     *  (handler) Animals are equal: true
      *  (b) Animals are equal: false
      *  (c) 编译错误
      *  (d) 以上答案都不对

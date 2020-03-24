@@ -147,9 +147,9 @@ public class LinkedList<E> {
         System.out.println(linkedList.size);
         System.out.println(linkedList);
         System.out.println("=======");
-        System.out.println(linkedList.contains("a"));
-        System.out.println(linkedList.remove("a"));
-        System.out.println(linkedList.contains("a"));
+        System.out.println(linkedList.contains("handler"));
+        System.out.println(linkedList.remove("handler"));
+        System.out.println(linkedList.contains("handler"));
         System.out.println(linkedList.size);
         System.out.println(linkedList);
         System.out.println("=======");

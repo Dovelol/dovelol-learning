@@ -10,7 +10,7 @@ public class Parsing {
     /**
      *  以上程序输出内容是？
 
-     *  (a) 运行时异常
+     *  (handler) 运行时异常
      *  (b) -1 null 1
      *  (c) -1 0 1
      *  (d) 编译错误
@@ -19,7 +19,7 @@ public class Parsing {
     /**
      * Returns Integer corresponding to s, or null if s is null.
      * @throws NumberFormatException if s is nonnull and
-     * doesn't represent a valid integer
+     * doesn't represent handler valid integer
      */
     public static Integer parseInt(String s) {
         return (s == null) ?

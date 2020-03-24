@@ -12,7 +12,7 @@ public class Name {
     /**
      *  以上程序输出内容是？
      *
-     *  (a) true
+     *  (handler) true
      *  (b) false
      *  (c) 程序编译错误
      *  (d) 以上都不是

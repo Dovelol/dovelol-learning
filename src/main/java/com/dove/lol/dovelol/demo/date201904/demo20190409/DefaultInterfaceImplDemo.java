@@ -13,7 +13,7 @@ public class DefaultInterfaceImplDemo implements DefaultInterfaceDemo {
 
     @Override
     public void defaultTest2() {
-        System.out.println("This is a default impl method.");
+        System.out.println("This is handler default impl method.");
     }
 
     public static void main(String[] args) {

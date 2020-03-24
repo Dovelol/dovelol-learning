@@ -14,7 +14,7 @@ public class Reflector {
     /**
      *  以上程序输出内容是？
      *
-     *  (a) 运行期异常
+     *  (handler) 运行期异常
      *  (b) true
      *  (c) 程序编译错误
      *  (d) 以上都不是

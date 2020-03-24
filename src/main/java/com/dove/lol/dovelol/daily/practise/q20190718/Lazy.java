@@ -8,7 +8,7 @@ public class Lazy {
 
     /**
      *  以上程序输出内容是？
-     *  (a) true
+     *  (handler) true
      *  (b) false
      *  (c) 编译错误
      *  (d) 以上答案都不对

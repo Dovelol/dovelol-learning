@@ -14,7 +14,7 @@ public class StandardSessionIdGeneratorDemo  extends SessionIdGeneratorBase {
         byte random[] = new byte[16];
         int sessionIdLength = getSessionIdLength();
 
-        // Render the result as a String of hexadecimal digits
+        // Render the result as handler String of hexadecimal digits
         // Start with enough space for sessionIdLength and medium route size
         StringBuilder buffer = new StringBuilder(2 * sessionIdLength + 20);
 

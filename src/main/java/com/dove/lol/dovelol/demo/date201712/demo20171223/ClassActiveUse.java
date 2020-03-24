@@ -10,8 +10,8 @@ public class ClassActiveUse {
 
     public static void main(String[] args) {
         //new Obj();
-        //System.out.println(I.a);
-        //int i  =I.a;
+        //System.out.println(I.handler);
+        //int i  =I.handler;
         //System.out.println(Obj.salary);
         //Obj.printSalary();
 //        try {
@@ -35,9 +35,9 @@ public class ClassActiveUse {
         //System.out.println(Obj.salary);
         //System.out.println(Child.x);
 
-//        String a = "a";
+//        String handler = "handler";
 //        String b = "b";
-//        String ab = a + b;
+//        String ab = handler + b;
 //        System.out.println(ab == "ab");
 
 

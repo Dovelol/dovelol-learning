@@ -11,7 +11,7 @@ public class Elvis {
     /**
      * 以上程序输出内容是？
      *
-     *  (a) Elvis wears size 0 belt.
+     *  (handler) Elvis wears size 0 belt.
      *  (b) Elvis wears size 73 belt.
      *  (c) Elvis wears size -1930 belt.
      *  (d) 以上答案都不对

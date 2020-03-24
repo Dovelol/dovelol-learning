@@ -10,7 +10,7 @@ public interface DefaultInterfaceDemo {
 
 
     default void defaultTest2(){
-        System.out.println("This is a default method.");
+        System.out.println("This is handler default method.");
     }
 
 }

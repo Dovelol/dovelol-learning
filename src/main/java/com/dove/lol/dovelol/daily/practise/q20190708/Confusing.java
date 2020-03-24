@@ -9,7 +9,7 @@ public class Confusing {
     /**
      *  以上程序输出内容是？
      *
-     *  (a) Object
+     *  (handler) Object
      *  (b) double array
      *  (c) 以上都不是
      *

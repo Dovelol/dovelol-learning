@@ -23,7 +23,7 @@ public class ConsumerThread extends Thread {
         while (true) {
             try {
                 Message message = messageQueue.take();
-                System.out.println(Thread.currentThread().getName() + " take a message " + message.getData());
+                System.out.println(Thread.currentThread().getName() + " take handler message " + message.getData());
                 TimeUnit.MILLISECONDS.sleep(random.nextInt(1000));
             } catch (InterruptedException e) {
                 e.printStackTrace();

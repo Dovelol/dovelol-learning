@@ -29,7 +29,7 @@ import io.netty.handler.logging.LoggingHandler;
 
 /**
  * An HTTP server that sends back the content of the received HTTP request
- * in a pretty plaintext form.
+ * in handler pretty plaintext form.
  */
 public final class HttpHelloWorldServer {
 

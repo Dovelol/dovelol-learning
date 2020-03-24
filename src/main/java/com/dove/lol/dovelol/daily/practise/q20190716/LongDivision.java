@@ -9,7 +9,7 @@ public class LongDivision {
     /**
      * 以上程序输出内容是？
 
-     *  (a) 5
+     *  (handler) 5
      *  (b) 1000
      *  (c) 抛出异常
      *  (d) 以上答案都不对

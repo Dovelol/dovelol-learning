@@ -11,7 +11,7 @@ public class MyMap {
 
     /**
      *  以上程序输出内容是？
-     *  (a) Hello 1 null 3
+     *  (handler) Hello 1 null 3
      *  (b) World 1 null 2
      *  (c) Hello 2 null 2
      *  (d) 以上答案都不是

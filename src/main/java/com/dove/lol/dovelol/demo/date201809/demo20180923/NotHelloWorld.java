@@ -11,7 +11,7 @@ public class NotHelloWorld {
 
     public void init() {
         EventQueue.invokeLater(() -> {
-            JLabel label = new JLabel("Not a Hello, World applet", SwingConstants.CENTER);
+            JLabel label = new JLabel("Not handler Hello, World applet", SwingConstants.CENTER);
         });
     }
 

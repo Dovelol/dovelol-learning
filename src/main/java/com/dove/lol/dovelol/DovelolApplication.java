@@ -16,7 +16,7 @@ public class DovelolApplication {
 //		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
 //		context.register(DovelolApplication.class);
 //		context.refresh();
-//		Object a = context.getBean("a");
+//		Object handler = context.getBean("handler");
 //		Object b = context.getBean("b");
 	}
 }

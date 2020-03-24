@@ -86,7 +86,7 @@ public class CountDownLatchExample4 {
         String tableName;
         long sourceRecordCount = 10;
         long targetCount;
-        String sourceColumnSchema = "<table name='a'><column name='col1' type='varchar2'/></table>";
+        String sourceColumnSchema = "<table name='handler'><column name='col1' type='varchar2'/></table>";
         String targetColumnSchema = "";
 
         public Table(String tableName, long sourceRecordCount) {
