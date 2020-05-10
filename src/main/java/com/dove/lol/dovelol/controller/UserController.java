@@ -22,15 +22,15 @@ public class UserController {
 
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
-    public UserController() {
+    private final UserServiceImpl userServiceImpl;
+
+    private final MyService myService;
+
+    public UserController(MyService myService, UserServiceImpl userServiceImpl) {
         logger.info("UserController 创建了");
+        this.myService = myService;
+        this.userServiceImpl = userServiceImpl;
     }
-
-    @Autowired
-    private UserServiceImpl userServiceImpl;
-
-    @Autowired
-    private MyService myService;
 
     @GetMapping(value = "/user")
     public ApiResponse<?> getUser(@RequestParam(value = "id") Long id) {

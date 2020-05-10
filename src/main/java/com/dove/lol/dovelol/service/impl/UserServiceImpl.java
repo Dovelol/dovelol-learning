@@ -32,7 +32,7 @@ public class UserServiceImpl {
         return user;
     }
 
-    //@Transactional(rollbackFor = Exception.class)
+    @Transactional(rollbackFor = RuntimeException.class)
     public Long createUser(User user) {
         userMapper.insertSelective(user);
         return user.getId();
