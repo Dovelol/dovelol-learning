@@ -20,6 +20,12 @@ public class Demo0712 {
         String s4 = s1.intern();
         System.out.println(s3 == s4);           // true
 
+
+        String s7 = new String("ccc");
+        String s8 = "ccc";
+
+        System.out.println(s7.intern() == s8);
+
     }
 
 }

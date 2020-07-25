@@ -3,9 +3,12 @@ package com.dove.lol.dovelol;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 @SpringBootApplication
+@EnableConfigurationProperties(DemoProperties.class)
 @MapperScan("com.dove.lol.dovelol.mapper")
 public class DovelolApplication {
 

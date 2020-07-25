@@ -1,5 +1,6 @@
 package com.dove.lol.dovelol.controller;
 
+import com.dove.lol.dovelol.DemoProperties;
 import com.dove.lol.dovelol.model.User;
 import com.dove.lol.dovelol.service.MyService;
 import com.dove.lol.dovelol.service.UserService;
@@ -25,6 +26,9 @@ public class UserController {
     private final UserServiceImpl userServiceImpl;
 
     private final MyService myService;
+
+    @Autowired
+    private DemoProperties demoProperties;
 
     public UserController(MyService myService, UserServiceImpl userServiceImpl) {
         logger.info("UserController 创建了");
