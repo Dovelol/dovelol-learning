@@ -160,16 +160,30 @@
             <version>1.1.1</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--            <version>3.4.0</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
             <version>1.10</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.jaegertracing/jaeger-core -->
+        <dependency>
+            <groupId>io.jaegertracing</groupId>
+            <artifactId>jaeger-core</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.aliyun.openservices/ons-client -->
+        <dependency>
+            <groupId>com.aliyun.openservices</groupId>
+            <artifactId>ons-client</artifactId>
+            <version>1.7.9.Final</version>
         </dependency>
 
     </dependencies>
