@@ -1,5 +1,15 @@
 package com.dove.lol.dovelol.demo.date202101.demo20210104;
 
+import com.aliyun.openservices.ons.api.Message;
+import com.aliyun.openservices.ons.api.ONSFactory;
+import com.aliyun.openservices.ons.api.PropertyKeyConst;
+import com.aliyun.openservices.ons.api.order.ConsumeOrderContext;
+import com.aliyun.openservices.ons.api.order.MessageOrderListener;
+import com.aliyun.openservices.ons.api.order.OrderAction;
+import com.aliyun.openservices.ons.api.order.OrderConsumer;
+
+import java.util.Properties;
+
 /**
  * @author Dovelol
  * @date 2021/1/4 22:16

@@ -2,14 +2,17 @@ package com.dove.lol.dovelol.controller;
 
 import com.dove.lol.dovelol.model.User;
 import com.dove.lol.dovelol.service.TestService;
+import org.apache.http.HttpRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.ServletInputStream;
+import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -70,6 +73,42 @@ public class TestController {
         User user = new User();
         testService.createUser(user);
         return list;
+    }
+
+    @GetMapping("/test1")
+    public String test1(@RequestParam String key, @RequestParam String value, HttpServletRequest request) {
+        try {
+            ServletInputStream inputStream = request.getInputStream();
+            BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+            StringBuilder stringBuilder = new StringBuilder();
+            String tmp = null;
+            while ((tmp=br.readLine()) != null){
+                stringBuilder.append(tmp);
+            }
+            System.out.println(stringBuilder.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return key+":"+value;
+    }
+
+    @PostMapping("/test2")
+    public String test2(@RequestParam String key, @RequestParam String value, HttpServletRequest request){
+        try {
+            ServletInputStream inputStream = request.getInputStream();
+            BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+            StringBuilder stringBuilder = new StringBuilder();
+            String tmp = null;
+            while ((tmp=br.readLine()) != null){
+                stringBuilder.append(tmp);
+            }
+            System.out.println(stringBuilder.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return key+":"+value;
     }
 
 
