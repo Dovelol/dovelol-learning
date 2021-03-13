@@ -18,6 +18,11 @@
         where id = #{id,jdbcType=BIGINT}
     </select>
 
+    <select id="listUser" resultMap="BaseResultMap">
+        select ${select}
+        from user
+    </select>
+
     <insert id="insertSelective" parameterType="com.dove.lol.dovelol.model.User">
         insert into user
         <trim prefix="(" suffix=")" suffixOverrides=",">

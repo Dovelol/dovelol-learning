@@ -58,4 +58,9 @@ public class UserController {
     }
 
 
+    @GetMapping(value = "/user/list")
+    public ApiResponse<?> listUser(String select) {
+        return new ApiResponse<>(ApiResponse.Status.SUCCESS, userServiceImpl.listUser(select));
+    }
+
 }

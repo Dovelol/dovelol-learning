@@ -9,13 +9,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @author Dovelol
  * @date 2019/3/11 22:30
  */
 
 @Service
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService{
 
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
@@ -26,16 +28,24 @@ public class UserServiceImpl {
         logger.info("UserServiceImpl 创建");
     }
 
+    @Override
     public User selectById(Long id) {
         User user = userMapper.selectByPrimaryKey(id);
         logger.info("user:" + user);
         return user;
     }
 
+    @Override
     @Transactional(rollbackFor = RuntimeException.class)
     public Long createUser(User user) {
         userMapper.insertSelective(user);
         return user.getId();
     }
+
+    @Override
+    public List<User> listUser(String select) {
+        return userMapper.listUser(select);
+    }
+
 
 }
