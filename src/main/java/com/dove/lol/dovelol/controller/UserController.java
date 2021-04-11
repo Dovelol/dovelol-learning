@@ -9,10 +9,7 @@ import com.dove.lol.dovelol.utils.ApiResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author Dovelol
@@ -59,7 +56,8 @@ public class UserController {
 
 
     @GetMapping(value = "/user/list")
-    public ApiResponse<?> listUser(String select) {
+    public ApiResponse<?> listUser(@RequestParam String select, @RequestHeader("trace") String trace ) {
+        System.out.println("trace: "+trace);
         return new ApiResponse<>(ApiResponse.Status.SUCCESS, userServiceImpl.listUser(select));
     }
 
